@@ -42,15 +42,6 @@ Chào mừng đến với **VietCodeUI for Community**, một dự án mã ngu�
 📖 Viết tài liệu và ví dụ minh họa.
 🌍 Chia sẻ kinh nghiệm sử dụng **VietCodeUI for Community**.
 
-## 📬 Liên hệ
-
-🔹 GitHub Issues: [Liên kết đến trang Issues của repo]
-🔹 [Các kênh liên lạc khác nếu có]
-
-## 📜 Giấy phép
-
-**VietCodeUI for Community** được phát hành theo giấy phép **[Tên giấy phép]** (ví dụ: MIT).
-
 ---
 
 ## 🚀 Lời kết
