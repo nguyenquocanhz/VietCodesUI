@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietCodesUI", "VietCodesUI\VietCodesUI.csproj", "{DA311C01-8850-4F6A-B0E3-B52F9B9BF62B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA311C01-8850-4F6A-B0E3-B52F9B9BF62B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA311C01-8850-4F6A-B0E3-B52F9B9BF62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA311C01-8850-4F6A-B0E3-B52F9B9BF62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA311C01-8850-4F6A-B0E3-B52F9B9BF62B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C4E0437-C575-46D6-9580-E0D4BCF295C6}
+	EndGlobalSection
+EndGlobal
