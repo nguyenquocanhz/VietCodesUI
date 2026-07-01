@@ -669,7 +669,7 @@ namespace VietcodeUI.Demo
 
                 if (!hasError)
                 {
-                    MessageBox.Show("Form validation passed!\nSigning in...", "VietCodesUI Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ModernMessageBox.Show("Form validation passed!\nSigning in...", "VietCodesUI Success", MessageBoxButtons.OK, ModernMessageIcon.Success);
                 }
             };
             cardLogin.Controls.Add(btnSubmit);
@@ -693,7 +693,7 @@ namespace VietcodeUI.Demo
                 Width = 320,
                 Height = 40
             };
-            btnGoogle.Click += (s, e) => MessageBox.Show("Triggering Google OAuth Flow...", "Google Authentication", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            btnGoogle.Click += (s, e) => ModernMessageBox.Show("Triggering Google OAuth Flow...", "Google Authentication", MessageBoxButtons.OK, ModernMessageIcon.Information);
             cardLogin.Controls.Add(btnGoogle);
 
             var btnGithub = new GithubLoginButton
@@ -702,7 +702,7 @@ namespace VietcodeUI.Demo
                 Width = 320,
                 Height = 40
             };
-            btnGithub.Click += (s, e) => MessageBox.Show("Triggering GitHub OAuth Flow...", "GitHub Authentication", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            btnGithub.Click += (s, e) => ModernMessageBox.Show("Triggering GitHub OAuth Flow...", "GitHub Authentication", MessageBoxButtons.OK, ModernMessageIcon.Information);
             cardLogin.Controls.Add(btnGithub);
         }
 
