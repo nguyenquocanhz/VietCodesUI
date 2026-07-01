@@ -124,7 +124,6 @@ namespace VietcodeUI.Controls
             // Set styles
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             BackColor = Color.Transparent;
-            Size = new Size(280, 82);
 
             // Initialize Title Label
             lblTitle = new Label
@@ -166,10 +165,13 @@ namespace VietcodeUI.Controls
 
             // Layout setup
             UpdateState();
+            Size = new Size(280, 82);
         }
 
         private void UpdateState()
         {
+            if (txtInput == null || lblHelper == null) return;
+
             if (isError)
             {
                 txtInput.BorderColor = ModernTheme.AccentCrimson;
@@ -194,8 +196,8 @@ namespace VietcodeUI.Controls
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            txtInput.Width = Width;
-            lblHelper.Width = Width - 4;
+            if (txtInput != null) txtInput.Width = Width;
+            if (lblHelper != null) lblHelper.Width = Width - 4;
         }
 
         protected override void OnPaint(PaintEventArgs e)
