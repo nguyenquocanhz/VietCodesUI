@@ -324,41 +324,32 @@ namespace VietcodeUI.Demo
             cardGraph.Controls.Add(lblGraphTitle);
             cardGraph.Controls.Add(lblGraphDesc);
 
-            // Toggle switch inside graph card
-            var toggleSwitchCard = new ModernToggleButton
+            // Modern DataGridView inside graph card
+            var dgvMetrics = new ModernDataGridView
             {
-                Location = new Point(20, 110),
-                Checked = true
+                Location = new Point(20, 85),
+                Size = new Size(668, 215),
+                ReadOnly = true,
+                AllowUserToAddRows = false
             };
-            var lblToggleDesc = new Label
-            {
-                Text = "Enable real-time telemetry streaming",
-                Font = new Font("Segoe UI", 9.5f, FontStyle.Bold),
-                Location = new Point(75, 111),
-                AutoSize = true
-            };
-            cardGraph.Controls.Add(toggleSwitchCard);
-            cardGraph.Controls.Add(lblToggleDesc);
+            dgvMetrics.Columns.Add("serverName", "Server Name");
+            dgvMetrics.Columns.Add("location", "Location");
+            dgvMetrics.Columns.Add("cpu", "CPU");
+            dgvMetrics.Columns.Add("bandwidth", "Bandwidth");
+            dgvMetrics.Columns.Add("status", "Status");
 
-            // Checkbox inside graph card
-            var chkTelemetry = new ModernCheckBox
-            {
-                Text = "Aggregate network packet inspection",
-                Location = new Point(20, 160),
-                Size = new Size(300, 24),
-                Checked = true
-            };
-            cardGraph.Controls.Add(chkTelemetry);
+            dgvMetrics.Rows.Add("Web Server #01", "Hanoi, VN", "24%", "120 Mbps", "Online");
+            dgvMetrics.Rows.Add("Database Main", "HCMC, VN", "42%", "450 Mbps", "Online");
+            dgvMetrics.Rows.Add("OAuth Gateway", "Da Nang, VN", "15%", "80 Mbps", "Online");
+            dgvMetrics.Rows.Add("Backup Server", "Frankfurt, DE", "0%", "0 Mbps", "Offline");
+            
+            dgvMetrics.Columns[0].Width = 150;
+            dgvMetrics.Columns[1].Width = 150;
+            dgvMetrics.Columns[2].Width = 80;
+            dgvMetrics.Columns[3].Width = 120;
+            dgvMetrics.Columns[4].Width = 100;
 
-            // Dropdown inside graph card
-            var cmbRegions = new ModernComboBox
-            {
-                Location = new Point(20, 210),
-                Width = 200
-            };
-            cmbRegions.Items.AddRange(new object[] { "Southeast Asia (Vietnam)", "East Asia (Japan)", "US West (Oregon)", "Europe (Frankfurt)" });
-            cmbRegions.SelectedIndex = 0;
-            cardGraph.Controls.Add(cmbRegions);
+            cardGraph.Controls.Add(dgvMetrics);
 
             pageDashboard.Controls.Add(cardGraph);
         }
