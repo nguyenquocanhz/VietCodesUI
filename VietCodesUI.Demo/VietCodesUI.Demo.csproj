@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationVisualStyles>true</ApplicationVisualStyles>
+    <RootNamespace>VietcodeUI.Demo</RootNamespace>
+    <AssemblyName>VietcodeUI.Demo</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VietCodesUI\VietCodesUI.csproj" />
+  </ItemGroup>
+
+</Project>

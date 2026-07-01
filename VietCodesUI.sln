@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35806.99 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietCodesUI", "VietCodesUI\VietCodesUI.csproj", "{DA311C01-8850-4F6A-B0E3-B52F9B9BF62B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietCodesUI.Demo", "VietCodesUI.Demo\VietCodesUI.Demo.csproj", "{590D4EC7-EC21-427E-B524-5158D6A3EB9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DA311C01-8850-4F6A-B0E3-B52F9B9BF62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA311C01-8850-4F6A-B0E3-B52F9B9BF62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA311C01-8850-4F6A-B0E3-B52F9B9BF62B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{590D4EC7-EC21-427E-B524-5158D6A3EB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{590D4EC7-EC21-427E-B524-5158D6A3EB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{590D4EC7-EC21-427E-B524-5158D6A3EB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{590D4EC7-EC21-427E-B524-5158D6A3EB9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
